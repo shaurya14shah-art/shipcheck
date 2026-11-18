@@ -1,0 +1,32 @@
+{
+  "name": "shipcheck",
+  "version": "0.1.0",
+  "description": "Find leaked keys, open databases and exposed source in your repos and live apps before attackers do.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "bin": {
+    "shipcheck": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "shipcheck": "tsx src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "ink-testing-library": "^4.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "dependencies": {
+    "ink": "^8.0.0",
+    "ink-text-input": "^6.0.0",
+    "react": "^19.3.1"
+  }
+}
